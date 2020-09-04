@@ -1,0 +1,141 @@
+1) IN PYTHON:
+   
+   str="Build products and solutions which will bestow the working ways of mankind beyond their imagination"
+   print('Number of Characters:')
+   print(len(str))
+
+OUTPUT:
+  Number of Characters: 85
+
+2)FIND THE MISSING NUMBER:
+  
+  class Main{
+    static int findMissingNumber(int arr[],int n)
+      {
+        int i,sum;
+        sum=(n+1)*(n+2)/2;
+        for(i=0;i<n;i++)
+          sum-=arr[i];
+        return sum;
+      }
+    public static void main(String args[])
+     {
+        int arr[]={1,2,4,6,3,7,8};
+        int num=findMissingNumber(arr,7);
+        System.out.println(num);
+     }
+   }
+
+OUTPUT:
+   5
+
+3)SWAPPING WITHOUT THIRD VARIABLE:
+
+  import java.util.*;
+  class Swap
+  {
+    public static void main(String arr[])
+     {
+       System.out.println("Enter x and y \n");
+       Scanner scan=new Scanner(System.in);
+       int x=scan.nextInt();
+       int y=scan.nextInt();
+       System.out.println("Before Swapping:\n"+x+\n""+y);
+       x=x+y;
+       y=x-y;
+       x=x-y;
+       System.out.println("After Swapping without a third variable:\n"+x+\n""+y);
+     }
+   }
+OUTPUT:
+  Enter x and y
+  45
+  98
+  Before Swapping:
+  x=45
+  y=98
+  After Swapping without a third variable:
+  x=98
+  y=45 
+
+
+4)TO FIND 1'S PRESENT IN GIVEN RANGE:
+def numberOf1sinRange(n):
+s=" "
+for i in range(0,n+1):
+s+=str(i)
+return(list(s).count( '1' ))
+n=10
+print('output:')
+print(numberOf1sinRange(n))
+
+OUTPUT:2
+
+s
+
+6)PROGRAM TO CALCULATE THE ANGLE BETWEEN THE HANDS OF THE CLOCK:
+
+import java.io.*;
+class Angle
+{
+static int findAngle(double hour,double min)
+{
+if(hour<0 || min<0  || hour>12 || min>60)
+  System.out.println("Invalid ");
+if(hour==12)
+hour=0;
+if(min==60)
+{
+min=0;
+hour+=1;
+if(hour>12)
+hour=hour-12;
+}
+int hangle=(int)(0.5*(hour*60+min));
+int mangle=(int)(6*min);
+int angle=Math.abs(hangle-mangle);
+angle=Math.min(360-angle,angle);
+return angle;
+}
+public static void main(String[] args)
+{
+System.out.println(findAngle(3, 30)+" degree");
+System.out.println(findAngle(6, 60)+" degree");
+}
+}
+
+OUTPUT:
+90
+180
+
+
+7)ADDING DIGITS IN NUMBERS UNTIL IT BECOMES SINGLE DIGIT:
+
+
+using namespace std:
+int addDigits(int n)
+{
+int sum=0;
+while(n>0 || sum>9)
+{
+if(n==0)
+{
+n=sum;
+sum=0;
+}
+sum+=n%10;
+n/=10;
+}
+return sum;
+}
+int main()
+{
+int n=9829;
+cout<<addDigits(n);
+return 0;
+}
+
+OUTPUT:
+       1
+
+
